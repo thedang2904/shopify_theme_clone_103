@@ -1,0 +1,53 @@
+.navbar{
+    padding: 2rem 5rem;  
+    box-shadow: none;
+    border-bottom: 1px solid $color-grey-5;
+    background: $color-grey-4;   
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: all .4s;
+    @include respond(tab-port){      
+        opacity: 1 !important;
+        z-index: 10 !important;
+    }
+    &-brand{
+        display: inline;
+        &-img{
+            vertical-align: middle;
+            max-height: 8rem;
+            max-width: 12rem;
+        }
+    }
+    &-right{
+        justify-content: flex-end;
+    }
+    &-toggler{
+        svg{
+            font-size: 2.4rem;
+            vertical-align: middle;
+        }
+    }
+    &-nav{
+        @include respond(tab-port){
+            margin-top: 2rem;
+        }
+    }
+}
+.nav{
+    &-item{
+        margin: 0 2rem;       
+        &-icon{
+            margin: 0 .75rem;
+        } 
+    }
+    &-link{
+        color:rgba($color-secondary-dark,.8) !important;
+        font-size: 1.4rem;
+        font-weight: 500;
+        &:hover{
+            color: $color-green-2 !important;
+        }
+    }
+}
+

@@ -1,0 +1,13 @@
+.badge__primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1.5rem 2.25rem;
+  background: $color-grey-5;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 10;
+  box-shadow: none;
+  color: $color-primary-dark;
+}

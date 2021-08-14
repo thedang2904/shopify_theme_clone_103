@@ -1,0 +1,63 @@
+.section__ {
+  &insta {
+    img {
+      transition: all 0.2s;
+    }
+    &:hover {
+      img {
+        filter: brightness(0.3);
+      }
+    }
+  }
+  &fw {
+    height: 100vh;
+    @include respond(tab-port) {
+      height: 50vh;
+    }
+    background: $color-grey-4;
+    &-grey-1 {
+      background: rgba($color-grey-5, 0.8);
+    }
+    &-grey-2 {
+      background: rgba($color-grey-5, 0.6);
+    }
+  }
+  &fw-hh {
+    height: 50vh;
+  }
+  &hw-hh {
+    height: 50vh;
+    width: 50vw;
+  }
+  &75h {
+    height: 75vh;
+    background: $color-grey-4;
+  }
+  width: 100%;
+  position: relative;
+  border: 0.75px solid $color-grey-5;
+  overflow: hidden;
+  img {
+    transition: all 0.4s;
+  }
+  &option-hover {
+    &:hover {
+      img {
+        opacity: 0.6;
+        transform: scale(1.05);
+      }
+      .bottom-line::after {
+        width: 10rem;
+      }
+    }
+  }
+
+  &more-op {
+    &:hover {
+      img {
+        opacity: 0.3;
+        transform: scale(1.1);
+      }
+    }
+  }
+}

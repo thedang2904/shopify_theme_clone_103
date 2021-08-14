@@ -1,0 +1,231 @@
+.text__wrapper-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 10%;
+  @include respond(tab-port) {
+    padding: 0 5rem;
+  }
+  width: 100%;
+  z-index: 2;
+}
+.text__wrapper-2 {
+  display: block;
+  width: 50%;
+  @include respond(tab-port) {
+    width: 100%;
+    text-align: center; 
+  }
+}
+.text__wrapper-3 {
+  padding: 3rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  blockquote {
+    font-family: "Libre Baskerville", serif;
+    font-size: 3.2rem;
+    margin: 5rem 8rem 0 8rem;
+    text-align: center;
+  }
+}
+.sm-title {
+  font-size: 1.6rem;
+  @include respond(tab-port) {
+    font-size: 1.4rem;
+  }
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  &-hw {
+    font-size: 1.4rem;
+  }
+}
+.md-title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.lg-title {
+  font-size: 7rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 1;
+  @include respond(tab-port) {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  &-hw {
+    font-size: 3rem;
+  }
+  &-sz-6 {
+    font-size: 6rem;
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+  }
+  &-sz-5 {
+    font-size: 5rem;
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+  }
+}
+
+.bottom-line {
+  &:after {
+    content: "";
+    width: 6rem;
+    height: 0.4rem;
+    margin-top: 6rem;
+    background: $color-primary-dark;
+    display: block;
+    transition: all 0.3s;
+  }
+  &-middle {
+    position: relative;
+    &::after {
+      content: "";
+      width: 6rem;
+      height: 0.4rem;
+      margin-top: 6rem;
+      background: $color-primary-dark;
+      display: block;
+      transition: all 0.3s;
+      left: 50%;
+      transform: translate(-50%, 0);
+      position: absolute;
+    }
+  }
+}
+.text-hov {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  opacity: 0;
+  z-index: 2;
+  transition: all 0.3s;
+  &:hover {
+    opacity: 1;
+  }
+  &-insta {
+    color: $color-primary-light;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1.75rem 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    top: 1rem;
+    &:hover {
+      top: 0;
+    }
+  }
+}
+.text {
+  &-brand-sm {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  &-price-sm {
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: capitalize;
+  }
+  &-note {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+    color: $color-grey-2;
+    a {
+      display: block;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 0 .5rem;
+      &:hover {
+        color: $color-green-2;
+      }
+    }
+  }
+  &-cmt {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    a {
+      font-weight: 800;
+      &:hover {
+        color: $color-green-2;
+      }
+    }
+  }
+}
+.input-1 {
+  font-size: 1.5rem;
+  padding: 1.25rem 1.25rem;
+  font-weight: 700;
+  color: $color-grey-4;
+  background: $color-primary-dark;
+  border: none;
+  &:focus {
+    outline: 1px solid $color-primary-light;
+  }
+}
+.icon__block {
+  &-1 {
+    font-size: 4rem;
+    color: rgba($color-grey-1, 0.6);
+  }
+  &-2 {
+    svg {
+      font-size: 4rem;
+      color: $color-primary-light;
+    }
+  }
+  &-3 {
+    svg {
+      font-size: 3rem;
+      color: $color-primary-light;
+      margin: 0 1rem;
+    }
+  }
+}
+.time {
+  margin-left: 3rem;
+  &-count{
+    display: flex;    
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: $color-primary-light;
+    bottom: 1.5rem;
+    right: 1rem;
+    &-unit{
+      margin: 0 1rem;
+      font-weight: 700;
+    }
+  }
+}
+.link_primary {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  &:hover {
+    a {
+      color: $color-green-2;
+    }
+  }
+}

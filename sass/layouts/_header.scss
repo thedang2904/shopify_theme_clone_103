@@ -1,0 +1,18 @@
+.header {
+  height: auto;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.heading__promotion{
+  padding: .75rem 1rem;
+  text-align: center;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-grey-1;
+  background: $color-primary-dark;
+  &:hover{
+    color: $color-grey-4;
+  }
+}

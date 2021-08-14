@@ -1,0 +1,91 @@
+.ful-screen{
+    position: absolute;
+    height: 100vh;
+    width: 100%
+}
+.img-cover{
+    object-fit: cover;
+    width: 100%;    
+    height: 100%;
+}
+.img-contain{
+    object-fit: contain;
+    &-20{
+        height: 20rem;
+    }
+}
+.w-30{
+    width: 30%;
+}
+.w-25{
+    width: 25%;
+}
+.text-grey{
+    color: $color-grey-1 !important;   
+}
+.f-1{
+    font-size: 1rem !important;
+}
+.f-1-5{
+    font-size: 1.5rem !important;
+}
+.f-2{
+    font-size: 2rem !important;
+}
+.f-3{
+    font-size: 3rem !important;
+}
+
+.pad-0-0{
+    padding: 0 0 !important;
+}
+.mar-top-md{
+    margin-top: 3rem;
+}
+.mar-top-lg{
+    margin-top: 5rem !important;
+}
+.mar-0-0{
+    margin: 0 0 !important;
+}
+.mar-bot-sm{
+    margin-bottom: 2rem;
+}
+
+
+.display-on-hover{
+    &:hover{
+        .item-display{
+            opacity: 1;
+        }
+    }
+    .item-display{
+        opacity: 0;
+        transition: .3s;
+    }
+}
+
+.hidden-md-elements{
+    @include respond(tab-port){
+        display: none !important;
+    }
+}
+.hidden-lg-elements{
+    @include respond(tab-land){
+        display: none !important;
+    }
+}
+
+.display-md-elements{
+    display: none !important;
+    @include respond(tab-port){
+        display: block !important;
+    }
+}
+.fw{
+    width: 100%;
+    height: 100%;
+}
+.bg__grey-2{
+    background: $color-grey-5;
+}

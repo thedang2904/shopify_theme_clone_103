@@ -1,0 +1,21 @@
+.nav-icon {
+    img{
+        filter: invert(40%);
+    }
+  &:hover {
+    img {
+      filter:invert(0);
+    }
+  }
+  img {
+    height: 2.4rem;
+    transition: all 0.4s;
+  }
+  &.search-icon {
+    &:hover {
+      img {
+        transform: rotate(-10deg);
+      }
+    }
+  }
+}
